@@ -18,12 +18,40 @@ h1{
 
 #forms {
     background-color: #1b1b32;
-    width: 50%;    
+    width: 54%;
+    position: relative;
+    top:5%;
+    left:23%;    
+    border-radius: 1%;
 }
 
 form{
     text-align: left;
     padding-left: 3%;
     padding-top: 5%;
-
 }
+
+input, select, textarea{
+    border-radius: 2%;
+    border-width: 0px;
+    width: 90%;
+    margin: 2%;
+    padding: 1%;    
+}
+
+input[type=radio], input[type=checkbox]{
+    width: auto;
+}
+button{
+    border-radius: 2%;
+    border-width: 0px;
+    background-color: green;
+    width: 90%;
+    margin: 2%;
+    padding: 1%;
+}
+
+label, p{
+    padding-left: 2%;
+}
+
