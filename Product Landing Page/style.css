@@ -1,0 +1,30 @@
+img{
+    width: 20%;
+    height: 5%;
+    align-content: center;
+}
+
+#start{
+    text-align: center;
+}
+
+#email{
+    width: 20%;
+    padding: 5px;
+}
+
+#submit{
+    margin: 1%;
+    background-color: #f1c40f;
+    font-size: 1em;
+    font-weight: 900;
+    border-radius: 2px;
+    cursor: pointer;
+    border-width: 0px;
+
+}
+
+.fa{
+    color: darkorange;
+    display: inline-block;
+}
