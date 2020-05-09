@@ -1,3 +1,39 @@
+/* CSS RESEt*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header-img{
+    width: 300px;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+  }
+  
+ul {
+    list-style: none;
+  }
+
+a {
+    text-decoration: none;
+  }
+  
+  /* UTILITY CLASSES */
+/* #container {
+    max-width: 960px;
+    margin: 2rem auto 0;
+    overflow: hidden;
+  }
+   */
+  
+
+/*
+
+
 img{
     width: 20%;
     height: 5%;
@@ -6,25 +42,230 @@ img{
 
 #start{
     text-align: center;
-}
-
-#email{
-    width: 20%;
-    padding: 5px;
-}
+} */
 
 #submit{
-    margin: 1%;
+    display: inline-block;
+    padding: .4rem 1.5rem;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: bold;
     background-color: #f1c40f;
-    font-size: 1em;
-    font-weight: 900;
-    border-radius: 2px;
-    cursor: pointer;
-    border-width: 0px;
+    width:50%;
+}
+#header{
+    background-color: #eeeeee;
+    color: #333333;
 
 }
 
-.fa{
+#nav-bar {
+  background-color: #dddddd;  
+  display:flex;
+/*     justify-content: space-between; */
+    align-items: center;
+    padding: .8rem 2rem;
+    overflow: hidden;
+    position:fixed;
+    top:0;
+    left:0;
+    widht:100%;
+}
+
+#nav-bar ul{
+    display : flex;
+}
+
+#nav-bar ul li {
+    padding: 1rem 2rem;
+}
+
+#nav-bar ul li a {
+    color: #333333;
+    font-size: 1.2rem;
+}
+
+#container {
+    margin: 1.5rem;
+    padding: .8rem;
+    text-align: center;
+}
+
+#container h1 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+#container form input {
+    display: block;
+    margin: auto;
+    width: 30%;
+    padding: .4rem;
+    margin-bottom: 1rem;
+}
+
+
+#features{
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 72%;
+}
+
+#features .feature {
+    display: inline-flex;
+    justify-self: center;
+    align-items: center;
+}
+
+#features .feature i {
+    color: darkorange;
+}
+
+#features .feature div {
+    padding: 1rem;
+    margin-left: 3rem;
+}
+
+#features .feature div h2 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+#how  {
+    padding: 3rem;
+    margin: auto;
+    text-align: center;
+    /* width: 600px;
+    height: 340px; */
+}
+
+#pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem .2rem;
+}
+
+.price-box {
+    border: solid #333333 3px;
+    border-radius: 2px;
+    /* padding: 0 0; */
+}
+
+.price-box:first-child{
+    margin-right: 1.2rem;
+    margin-left: 10%;
+}
+
+.price-box:last-child{
+    margin-left: 1.2rem;
+    margin-right: 10%;
+}
+
+.price-box h3 {
+    background-color: #dddddd;
+    font-size: 1.05rem;
+    padding: 1rem;
+}
+
+.price-box h2 {
+    padding: 1rem;
+}
+
+.price-box p {
+    padding: 0 5rem 2rem;
+    text-align: center;
+}
+
+.price-box button {
+    display: inline-block;
+    padding: .4rem 1.5rem;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #f1c40f;
+    margin:1rem;
+}
+
+#main-footer {
+    padding: 1rem 0.5rem;
+    margin-top: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+
+#main-footer div a {
+    align-content: flex-end;
+    color: #333333;
+    text-align: right;
+    padding: .5rem 1rem;
+}
+/* .fa{
     color: darkorange;
     display: inline-block;
-}
+} */
+
+@media (max-width:800px) {
+    #nav-bar {
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 0.3rem;
+    }
+
+    #nav-bar ul li {
+        padding: 1rem 1rem;
+    }
+
+    #features .feature {
+        flex-direction: column;
+    }
+
+    #feature .feature div{
+        padding: 1rem;
+        margin: .5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    #how{
+        padding: 1rem;
+    }
+    #how #video{
+        width: 80%;
+        height: 30%;
+    }
+
+    #pricing {
+        flex-direction: column;
+    }
+    #pricing .price-box{
+        margin: 1rem;
+    }
+
+    .price-box:first-child{
+        margin-right: 0;
+    }
+    .price-box:last-child{
+        margin-left: 0;
+    }
+
+    #main-footer {
+        padding: 1rem 0.5rem;
+        margin-top: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+} 
